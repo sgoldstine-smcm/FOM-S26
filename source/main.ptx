@@ -64,7 +64,7 @@
 
       <!-- Include homework files -->
       <xi:include href="./homework/quiz1rev.ptx"/>
-
+      <xi:include href="./homework/quiz1revsol.ptx"/>
     </chapter>
 
     <!-- Include additional chapters for other categories -->

@@ -1,0 +1,298 @@
+12pt,letterpaperreport
+\usepackage{graphicx}
+%\usepackage{t1enc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+\textwidth6.5in
+\oddsidemargin-.15in
+\textheight9in
+\topmargin-.65in
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\N{{\bf N}}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\R{{\bf R}}
+\def\ps{{\cal P}}
+\def\mod{\mbox{mod }}
+\def\emptyset{\varnothing}
+
+\begin{document}
+
+\begin{center}
+{\bf Foundations of Mathematics \\
+Quiz 1 Review Solutions}\\
+\end{center}
+
+
+\begin{enumerate}
+
+\item Let $A = \{1,2,3\}$, $B = \{\varnothing, 1,\{2\}, \{2,3\}\}$, and $C = \{A,4,5\}$.
+
+\begin{enumerate}
+\item  Compute $A\cup C$.
+
+$$A\cup C = \{1,2,3,A,4,5\} = \{1,2,3,4,5,\{1,2,3\}\}$$
+
+\textit{Remark.} $\{1,2,3,A,4,5\}$ on its own is a correct identification of $A\cup C$, and so are 
+$\{1,2,3,\{1,2,3\},4,5\}$ and $\{1,2,3,4,5,\{1,2,3\}\}$.
+
+
+\item  Compute $\ps(A) \cap B$.
+
+$$\ps(A) \cap B = \{\varnothing,\{2\},\{2,3\}\}$$
+
+(Note that you can answer this question \textit{without} computing $\ps(A)$.)
+
+\item  Compute $|\ps (C)|$.
+
+Since $|C| = 3$, $|\ps (C)| = 2^3 = 8$.
+
+\item Is $B\subseteq A$?  Explain your answer.
+
+No, because $\varnothing\in B$ but $\varnothing\notin A$.  
+
+(Note that you can apply the same
+argument to $\{2\}$ or  $\{2,3\}$.)
+
+\item Is $A\subseteq C$?  Explain your answer.
+ 
+ No, because $1\in A$ but $1\notin C$.  On the other hand, $A\in C$.
+ 
+ It may (or may not) help to observe that $C = \{\{1,2,3\},4,5\}$.
+
+\end{enumerate}
+
+
+\item Let $a = 1$, $B = \{1,2\}$, $C = \{\emptyset, \{1\}, \{1,2\}\}$, and $S = \{1,2,3,4,5\}$.
+
+Determine whether each of the following statements is true or false.
+
+\bigskip
+
+\begin{itemize}
+\item $a\in S$
+
+true
+
+
+\item $a\in \ps(S)$
+
+false ($a$ is not a set, so it's not a subset of~$S$.)
+
+\item $B\in S$
+
+false
+
+\item $B\in \ps(S)$ 
+
+true (equivalently, $B\subseteq S$.)
+
+\item $B\subseteq\ps(S)$ 
+
+false (the elements of~$B$ are integers, while the elements of \ps(S) are sets of integers.)
+
+\item $C\in\ps(S)$
+
+false
+
+\item $C\subseteq\ps(S)$
+
+true
+
+\item $C\subseteq\ps(B)$ 
+
+true
+
+\item $\emptyset\in C$ 
+
+true
+
+\item $\emptyset\subseteq C$
+
+true
+\end{itemize}
+
+\item Consider the following intervals in $\R$, which will be our universal set for this question.
+$$\begin{array}{ccc}
+I = [0,2] \ \ \ & K = (1,3]\ \ \  & M = (2,\infty)\end{array}$$
+
+Find the following sets.  If the set is an interval, write it in interval notation.
+
+\begin{enumerate}
+\item $I\cup M = [0,\infty)$
+
+\item $I-K = [0,1]$
+
+\item $I\cap K = (1,2]$
+
+\item $I\cap K\cap M = \varnothing$
+
+\item $\overline{M} = (-\infty, 2]$
+
+\item $\overline{I\cup K} = (-\infty, 0)\cup(3,\infty) =
+\{x\in\R: x<0 \mbox{ or }x>3\}$
+
+\end{enumerate}
+
+\item The figure below shows  a subset of $\R^2$ of the form 
+$$A\times B = \{(x,y): x\in A, y\in B\},$$ where~$A$ and~$B$ are
+subsets of~$\R$.  The endpoints of the line segment and the edges of the rectangle are all in the subset.  (The $x$ and $y$ axes are not in the subset.)
+
+\begin{enumerate}
+\item  What is~$A$?  What is~$B$?
+
+\medskip
+
+$A = [1,4] = \{x\in\R: 1\leq x\leq 4\}$
+
+\textit{Remark.}  Either of the formulas for~$A$ is valid; you don't need both of them.
+But note that $A\neq\{1,4\}$.  Do you see the difference?
+
+$B = [-3,-2]\cup\{-4\} = \{x\in\R: -3\leq x\leq -2\mbox{ or }x = -4\}$
+\item  Give the set $(A\times B)\cap(\Z\times\Z)$ by listing its elements between set braces.
+
+$$(A\times B)\cap(\Z\times\Z) = 
+\begin{array}{c}\{(1,-2),(1,-3),(1,-4)\ \\
+(2,-2),(2,-3),(2,-4)\\
+(3,-2),(3,-3),(3,-4)\\
+\ (4,-2),(4,-3),(4,-4)\}
+\end{array}
+$$
+\end{enumerate}
+
+\item Consider the sets $$\begin{array}{c}S = \{2,3,5\},\\[\jot]T = \{\varnothing, \{1,2,4,8,16\}\},\\[\jot]
+\mbox{and }V = \{5, \{5\}\}.\end{array}$$
+
+Here are five open sentences about a set~$X$.  
+For each, list the all the values of~$X$ (chosen from the options $X=S$, $X=T$, and $X=V$) that make the sentence true.  For example, if I gave you the open sentence $5\in X$, the answer would be: $S$, $V$.)
+
+As a reminder, $\Z$ denotes the set of integers.
+
+\begin{enumerate}
+\item  $X\in \ps(\Z)$.
+
+\smallskip
+$S$
+\smallskip
+
+\item  $X\subseteq \ps(\Z)$.
+
+\smallskip
+$T$
+\smallskip
+
+\item  $X$ has exactly two elements.
+
+\smallskip
+$T$, $V$
+\smallskip
+
+\item $X\cap\Z = \varnothing$.
+
+\smallskip
+$T$
+\smallskip
+
+\item $X\cup\Z = \Z$.
+
+\smallskip
+$S$
+\end{enumerate}
+
+
+\item 
+For the purposes of this question, the math wing is having an open house on Thursday and Friday.  Let~$P$ be the statement ``Kiko is coming to the open house on Thursday'' and let~$Q$ be the statement ``Kiko is coming to the open house on Friday.''
+
+Rewrite each of the following using only the symbols $P$, $Q$, $\land$, $\lor$, $\sim$, $\implies$,
+$($, and $)$ without changing its meaning.  
+
+$$\begin{array}{c|c}
+\mbox{Symbol} & \mbox{Meaning}\\ \hline
+\land&\mbox{and}\\
+\lor&\mbox{or}\\
+\sim&\mbox{not}\\
+\implies&\mbox{implies}\end{array}$$
+
+
+\begin{enumerate}
+\item  Kiko is coming to both days of the open house.
+
+$$P\land Q$$
+
+\item  Kiko is coming to at most one day of the open house.  (Equivalently, Kiko is coming to no more than one day of the open house.)
+
+$$\sim(P\land Q)$$
+
+$$\sim P\ \lor \sim Q$$
+
+$$P\implies \sim Q$$
+
+(Any of these three answers is valid.  There are other possibilities, too.)
+
+\medskip
+
+\item  Kiko is coming to the open house on Friday if she doesn't come on Thursday.
+
+$$\sim P\implies Q$$
+
+(Or, if you want to be too clever by half, $P\lor Q$.)
+
+\medskip
+
+\end{enumerate}
+
+\item  A look at some conditional statements and their converses.
+
+\begin{enumerate}
+\item  For this part, $x$ will only take on integer values.
+
+Consider the statement ``If $x$ is even, then $x^2$ is even.''  
+
+Is the statement true or false?
+
+\medskip
+
+It is true.  (Sketch of the proof: Suppose~$x$ is even.  By definition, there is an integer~$n$ for which
+$x = 2n$.  It follows that $x^2 = (2n)^2 = 4n^2 = 2(2n^2)$, which is even because $2n^2\in\Z$.)
+
+\bigskip
+
+Give the converse of the statement.  Is the converse true or false?
+
+\medskip
+
+If $x^2$ is even, then $x$ is even.
+
+This is true.  (The proof here is trickier, but we'll be ready for it in a few weeks.)
+
+\bigskip
+
+\item  Consider the statement ``If $a\in\R$, then $a\in\Z$.''
+
+Is the statement true or false?
+
+\medskip
+
+It is false.  For instance, $\pi\in \R$, but $\pi\notin\Z$.
+
+\bigskip
+
+Give the converse of the statement.  Is the converse true or false?
+
+\medskip
+
+If $a\in\Z$, then $a\in\R$
+
+This is true.  This is just another way of saying that $\Z\subseteq\R$.
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+\end{document}
