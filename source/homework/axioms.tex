@@ -1,0 +1,226 @@
+\documentclass[12pt,letterpaper]{report}
+\usepackage{graphicx}
+%\usepackage{t1enc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+%\pagestyle{empty}
+%\textwidth6.5in
+%\oddsidemargin-.15in
+%\textheight9in
+%\topmargin-.65in
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\N{{\bf N}}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\R{{\bf R}}
+\def\ps{{\cal P}}
+\def\mod{\mbox{mod }}
+\def\inv{^{-1}}
+\def\emptyset{\varnothing}
+
+\title{Axioms of $\R$ and $\Z$}
+\titleformat{\section}[display]
+{\normalfont\bfseries}
+{\thesection.}{0.5em}{\centering}
+
+\titleformat{\subsection}[display]
+{\normalfont\itshape}
+{\thesection.}{0.5em}{}
+
+
+\begin{document}
+
+\begin{center}
+{\bf Foundations of Mathematics \\
+Axioms of~$\R$ and $\Z$}\\
+\end{center}
+
+The following statements are all things that you can take for granted when you write proofs in this course.
+In practice, you'll probably be fine without consulting this list, but it can be instructive to work out how you use
+these properties when you do basic arithmetic and algebra.
+
+\section*{Axioms of~$\R$ that (mostly) also apply to $\Z$}
+
+\subsection*{Operations}
+
+Note that you can always assume the results of basic arithmetic; for instance, you do not need to prove that
+$2 + 3 = 5$.  In addition, we have the following axioms.
+
+\begin{itemize}
+\item $\R$ is \textbf{closed under addition}.  (Likewise, $\Z$ is closed under addition.)
+
+For all $a,b\in \R$, $a + b\in\R$.  (For all $a,b\in \Z$, $a + b\in\Z$.)
+
+\item $\R$ is \textbf{closed under multiplication}.  (Likewise, $\Z$ is closed under multiplication.)
+
+For all $a,b\in \R$, $a\cdot b\in\R$.  (For all $a,b\in \Z$, $a \cdot b\in\Z$.)
+
+\item While this can be derived from the previous two axioms, it is worth noting that both~$\R$ and~$\Z$ are
+also closed under subtraction. 
+
+\item  (Note: you \textbf{cannot} replace~$\R$ with~$\Z$ in this one, but the list would feel incomplete without it.)
+
+For all $a,b\in\R$, if $b\neq 0$, then $a/b\in\R$.
+
+\end{itemize}`
+
+\subsection*{Algebra}
+
+\begin{itemize}
+\item  Addition is \textbf{commutative} in~$\R$ (and in~$\Z$).
+
+For all $a,b\in\R$, $a + b = b + a$.
+
+\item Addition is \textbf{associative} in~$\R$ (and in~$\Z$).
+
+For all $a,b,c\in\R$, $(a + b) + c = a + (b + c)$.
+
+\item  Multiplication is commutative in~$\R$ (and in~$\Z$).
+
+For all $a,b\in\R$, $a \cdot b = b \cdot a$.
+
+\item Multiplication is associative in~$\R$ (and in~$\Z$).
+
+For all $a,b,c\in\R$, $(a \cdot b) \cdot c = a \cdot (b \cdot c)$.
+
+\item Multiplication \textbf{distributes} over addition in~$\R$ (and in~$\Z$).
+
+For all $a,b,c\in\R$, $a(b + c) = ab + ac$.
+
+This is also called the \textbf{distributive} property, and it is the basis of all the factoring and expanding
+you've done since high school algebra.
+
+\item  Not really an axiom of its own, but a corollary to the standard distributive
+property: multiplication also distributes over subtraction in~$\R$ (and in~$\Z$).
+
+For all $a,b,c\in\R$, $a(b - c) = ab - ac$.
+
+\item  This rule, which applies to everything in~$\R$ and~$\Z$,
+is the reason why we spend so much time in math classes thinking about how to factor algebraic expressions.
+
+For all $a,b\in\R$, if $a\cdot b = 0$, then $a = 0$ or $b = 0$.
+\end{itemize}
+
+While the next cluster of properties is already covered by the blanket statement that you don't have to
+``prove'' the results of simple additions and multiplications and by the other axioms 
+from \textit{Operations}, I'm including them here because of their significance
+in group theory, one of the major components of abstract algebra.
+
+\begin{itemize}
+
+\item  The number~$0$ is the \textbf{additive identity} of~$\R$ (and of~$\Z$).
+
+For all $a\in\R$, $a + 0 = a$.
+
+\item  Every element of~$\R$ has an \textbf{additive inverse} in~$\R$.  (Likewise, every element of~$\Z$
+has an additive inverse in~$\Z$.)
+
+For all $a\in \R$, $-a\in \R$, where $a + (-a) = 0$.  (For all $a\in \Z$, $-a\in \Z$, where $a + (-a) = 0$.)
+
+\item  The number~$1$ is the \textbf{multiplicative identity} of~$\R$ (and of~$\Z$).
+
+For all $a\in\R$, $1\cdot a = a$.
+
+\item  Every \textbf{nonzero} element of~$\R$ has a multiplicative inverse in~$\R$.
+
+For all $a\in\R$, if $a\neq 0$, then $a\inv\in\R$ and $a\cdot a\inv = 1$.
+
+\textit{Remarks.}  Recall from exponent rules that $a\inv = 1/a$.  I have my reasons for writing the property using
+the exponential notation.
+
+Notice that~$\Z$ is conspicuously absent here.  Do you see why?
+
+\end{itemize}
+
+\subsection*{Inequalities}
+
+Everything in this section  applies to~$\Z$ in exactly the same way it applies to~$\R$, so I will
+skip over saying ``and $\Z$'' for everything here.
+
+\begin{itemize}
+
+\item  Suppose $a,b,c\in\R$.  If $a < b$, then $a + c < b + c$.
+
+You can replace $<$ with $\leq$, $>$, or $\geq$.  In fact, if you note that
+if $a = b$, then $a + c = b + c$, and also remember that $b > a$ is synonymous with $a < b$, you can derive
+each of these three variations from the original statement.
+
+\item  Not really a new axiom, since you can replace $c$ with $-c$ in the axiom above, but it is also
+true that for all $a,b,c\in\R$, if $a<b$, then $a-c < b-c$.
+
+\item  Suppose $a,b,c\in\R$ and $a<b$.
+
+If $c > 0$, then $ac < bc$.
+
+If $c < 0$, then $ac > bc$.
+
+You can replace $<$ with $\leq$, and it isn't too difficult to reword this axiom for the assumption that $a > b$.
+
+\item  Suppose $a,b,c\in\R$.
+
+If $a<b$ and $b<c$, then $a < c$.
+
+This is sometimes called the \textbf{transitive} property of~$<$.  The transitive property also applies
+to $\leq$, $>$, and $\geq$.
+
+\item \textbf{Trichotomy}:
+
+For any $a,b\in\R$, exactly one of the following three statements is true.
+
+$$a < b$$
+$$a = b$$
+$$a > b$$
+
+\textit{Remark.}  An alternate form of trichotomy is the statement that for every $a\in\R$, $a$ is
+exactly one of the following three things: positive, $0$, or negative.  This version can be combined with
+the first axiom in this section to derive the version comparing~$a$ to~$b$.
+
+\end{itemize}
+
+\section*{Axioms particular to~$\Z$}
+
+\subsection*{Mostly just the one axiom}
+
+\begin{itemize}
+\item \textbf{The Well Ordering Principle}:
+
+Every non-empty subset of $\Z^+$ has a smallest element.
+
+\textit{Remarks.}  This is somewhat subtler than the other axioms in this list.  To have a better understanding of its significance, 
+you might want to think through why the corresponding statement is false for $\R^+$ or for $\Q^+$.
+
+There is a logically equivalent axiom that we'll learn about in a few more chapters.
+
+\end{itemize}
+
+Here is a statement you may also assume in FOM, but it is actually a provable consequence of the Well Ordering Principle.  The proof is
+an interesting exercise that you might want to attempt---\textit{after} Chapter 6.
+
+\begin{itemize}
+\item  There are no integers between~$0$ and~$1$.
+
+In other words, if $n\in\Z$, then $n\leq 0$ or $n\geq 1$.
+
+\item  A potentially useful corollary of the previous statement:
+
+Suppose $a,b\in\Z$.  If $a > b$, then $a\geq b+1$.
+
+\end{itemize}
+
+Finally, you may use the Division Algorithm (stated in Chapter~1 and again in Chapter~4) without proof.
+In Section 1.9, the book outlines how the Division Algorithm can be proven from the Well Ordering Principle.
+
+\begin{itemize}
+\item \textbf{Division Algorithm}:
+
+Suppose $a\in\Z$ and $b\in\Z^+$.  Then there exist unique integers~$q$ and~$r$ such that
+$a = bq + r$ and $0\leq r < b$.
+\end{itemize}
+
+
+\end{document}

@@ -60,11 +60,12 @@
     </chapter>-->
 
     <chapter xml:id="homework">
-      <title>Quiz 1 Review</title>
+      <title>FOM Documents</title>
 
       <!-- Include homework files -->
       <xi:include href="./homework/quiz1rev.ptx"/>
       <xi:include href="./homework/quiz1revsol.ptx"/>
+      <xi:include href="./homework/axioms.ptx"/>
     </chapter>
 
     <!-- Include additional chapters for other categories -->
