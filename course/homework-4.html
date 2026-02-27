@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Axioms of {\bf R} and {\bf Z}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Foundations of Mathematics">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.15';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.529fd9398bfbd03e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Foundations of Mathematics</span> <span class="subtitle">Spring 2026</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="homework-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="homework.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active"><li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">FOM Documents</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Quiz 1 Review</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Quiz 1 Review Solutions</span></a></div></li>
+<li class="toc-item toc-worksheet contains-active">
+<div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Axioms of <span class="process-math">\({\bf R}\)</span> and <span class="process-math">\({\bf Z}\)</span></span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="homework-4.html#axioms-of-bf-r-that-mostly-also-apply-to-bf-z" class="internal"><span class="title">Axioms of <span class="process-math">\({\bf R}\)</span> that (mostly) also apply to <span class="process-math">\({\bf Z}\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-4.html#operations" class="internal"><span class="title">Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-4.html#algebra" class="internal"><span class="title">Algebra</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-4.html#inequalities" class="internal"><span class="title">Inequalities</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="homework-4.html#axioms-particular-to-bf-z" class="internal"><span class="title">Axioms particular to <span class="process-math">\({\bf Z}\)</span></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-4.html#mostly-just-the-one-axiom" class="internal"><span class="title">Mostly just the one axiom</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="homework-4" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axioms of <span class="process-math">\({\bf R}\)</span> and <span class="process-math">\({\bf Z}\)</span></span><div class="print-links"><a href="?printpreview=homework-4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="introduction" id="homework-4-2"><div class="para" id="homework-4-2-1">
+<em class="alert">Foundations of Mathematics</em><div class="autopermalink" data-description="Paragraph"><a href="#homework-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="para" id="homework-4-3">The following statements are all things that you can take for granted when you write proofs in this course. In practice, you’ll probably be fine without consulting this list, but it can be instructive to work out how you use these properties when you do basic arithmetic and algebra.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="section" id="axioms-of-bf-r-that-mostly-also-apply-to-bf-z"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axioms of <span class="process-math">\({\bf R}\)</span> that (mostly) also apply to <span class="process-math">\({\bf Z}\)</span></span>
+</h3>
+<section class="subsection" id="operations"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Operations</span>
+</h4>
+<div class="para" id="operations-2">Note that you can always assume the results of basic arithmetic; for instance, you do not need to prove that <span class="process-math">\(2 + 3 = 5\text{.}\)</span> In addition, we have the following axioms.<div class="autopermalink" data-description="Paragraph"><a href="#operations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="operations-3">
+<ul class="disc" id="operations-3-1">
+<li id="operations-3-1-1">
+<div class="para" id="operations-3-1-1-1">
+<span class="process-math">\({\bf R}\)</span> is <dfn class="terminology">closed under addition</dfn>. (Likewise, <span class="process-math">\({\bf Z}\)</span> is closed under addition.)<div class="autopermalink" data-description="Paragraph"><a href="#operations-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="operations-3-1-1-2">For all <span class="process-math">\(a,b\in {\bf R}\text{,}\)</span> <span class="process-math">\(a + b\in{\bf R}\text{.}\)</span> (For all <span class="process-math">\(a,b\in {\bf Z}\text{,}\)</span> <span class="process-math">\(a + b\in{\bf Z}\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#operations-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#operations-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="operations-3-1-2">
+<div class="para" id="operations-3-1-2-1">
+<span class="process-math">\({\bf R}\)</span> is <dfn class="terminology">closed under multiplication</dfn>. (Likewise, <span class="process-math">\({\bf Z}\)</span> is closed under multiplication.)<div class="autopermalink" data-description="Paragraph"><a href="#operations-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="operations-3-1-2-2">For all <span class="process-math">\(a,b\in {\bf R}\text{,}\)</span> <span class="process-math">\(a\cdot b\in{\bf R}\text{.}\)</span> (For all <span class="process-math">\(a,b\in {\bf Z}\text{,}\)</span> <span class="process-math">\(a \cdot b\in{\bf Z}\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#operations-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#operations-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="operations-3-1-3">
+<div class="para" id="operations-3-1-3-1">While this can be derived from the previous two axioms, it is worth noting that both <span class="process-math">\({\bf R}\)</span> and <span class="process-math">\({\bf Z}\)</span> are also closed under subtraction.<div class="autopermalink" data-description="Paragraph"><a href="#operations-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#operations-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="operations-3-1-4">
+<div class="para" id="operations-3-1-4-1">(Note: you <dfn class="terminology">cannot</dfn> replace <span class="process-math">\({\bf R}\)</span> with <span class="process-math">\({\bf Z}\)</span> in this one, but the list would feel incomplete without it.)<div class="autopermalink" data-description="Paragraph"><a href="#operations-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="operations-3-1-4-2">For all <span class="process-math">\(a,b\in{\bf R}\text{,}\)</span> if <span class="process-math">\(b\neq 0\text{,}\)</span> then <span class="process-math">\(a/b\in{\bf R}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#operations-3-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#operations-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#operations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="operations-4">‘<div class="autopermalink" data-description="Paragraph"><a href="#operations-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Operations"><a href="#operations" title="Copy heading and permalink for Subsection: Operations" aria-label="Copy heading and permalink for Subsection: Operations">🔗</a></div></section><section class="subsection" id="algebra"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algebra</span>
+</h4>
+<div class="para logical" id="algebra-2">
+<ul class="disc" id="algebra-2-1">
+<li id="algebra-2-1-1">
+<div class="para" id="algebra-2-1-1-1">Addition is <dfn class="terminology">commutative</dfn> in <span class="process-math">\({\bf R}\)</span> (and in <span class="process-math">\({\bf Z}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-2-1-1-2">For all <span class="process-math">\(a,b\in{\bf R}\text{,}\)</span> <span class="process-math">\(a + b = b + a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-2-1-2">
+<div class="para" id="algebra-2-1-2-1">Addition is <dfn class="terminology">associative</dfn> in <span class="process-math">\({\bf R}\)</span> (and in <span class="process-math">\({\bf Z}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-2-1-2-2">For all <span class="process-math">\(a,b,c\in{\bf R}\text{,}\)</span> <span class="process-math">\((a + b) + c = a + (b + c)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-2-1-3">
+<div class="para" id="algebra-2-1-3-1">Multiplication is commutative in <span class="process-math">\({\bf R}\)</span> (and in <span class="process-math">\({\bf Z}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-2-1-3-2">For all <span class="process-math">\(a,b\in{\bf R}\text{,}\)</span> <span class="process-math">\(a \cdot b = b \cdot a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-2-1-4">
+<div class="para" id="algebra-2-1-4-1">Multiplication is associative in <span class="process-math">\({\bf R}\)</span> (and in <span class="process-math">\({\bf Z}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-2-1-4-2">For all <span class="process-math">\(a,b,c\in{\bf R}\text{,}\)</span> <span class="process-math">\((a \cdot b) \cdot c = a \cdot (b \cdot c)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-2-1-5">
+<div class="para" id="algebra-2-1-5-1">Multiplication <dfn class="terminology">distributes</dfn> over addition in <span class="process-math">\({\bf R}\)</span> (and in <span class="process-math">\({\bf Z}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-2-1-5-2">For all <span class="process-math">\(a,b,c\in{\bf R}\text{,}\)</span> <span class="process-math">\(a(b + c) = ab + ac\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-2-1-5-3">This is also called the <dfn class="terminology">distributive</dfn> property, and it is the basis of all the factoring and expanding you’ve done since high school algebra.<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-2-1-6">
+<div class="para" id="algebra-2-1-6-1">Not really an axiom of its own, but a corollary to the standard distributive property: multiplication also distributes over subtraction in <span class="process-math">\({\bf R}\)</span> (and in <span class="process-math">\({\bf Z}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-2-1-6-2">For all <span class="process-math">\(a,b,c\in{\bf R}\text{,}\)</span> <span class="process-math">\(a(b - c) = ab - ac\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-2-1-7">
+<div class="para" id="algebra-2-1-7-1">This rule, which applies to everything in <span class="process-math">\({\bf R}\)</span> and <span class="process-math">\({\bf Z}\text{,}\)</span> is the reason why we spend so much time in math classes thinking about how to factor algebraic expressions.<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-2-1-7-2">For all <span class="process-math">\(a,b\in{\bf R}\text{,}\)</span> if <span class="process-math">\(a\cdot b = 0\text{,}\)</span> then <span class="process-math">\(a = 0\)</span> or <span class="process-math">\(b = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-2-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-2-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#algebra-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-3">While the next cluster of properties is already covered by the blanket statement that you don’t have to “prove” the results of simple additions and multiplications and by the other axioms from <em class="emphasis">Operations</em>, I’m including them here because of their significance in group theory, one of the major components of abstract algebra.<div class="autopermalink" data-description="Paragraph"><a href="#algebra-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="algebra-4">
+<ul class="disc" id="algebra-4-1">
+<li id="algebra-4-1-1">
+<div class="para" id="algebra-4-1-1-1">The number <span class="process-math">\(0\)</span> is the <dfn class="terminology">additive identity</dfn> of <span class="process-math">\({\bf R}\)</span> (and of <span class="process-math">\({\bf Z}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-4-1-1-2">For all <span class="process-math">\(a\in{\bf R}\text{,}\)</span> <span class="process-math">\(a + 0 = a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-4-1-2">
+<div class="para" id="algebra-4-1-2-1">Every element of <span class="process-math">\({\bf R}\)</span> has an <dfn class="terminology">additive inverse</dfn> in <span class="process-math">\({\bf R}\text{.}\)</span> (Likewise, every element of <span class="process-math">\({\bf Z}\)</span> has an additive inverse in <span class="process-math">\({\bf Z}\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-4-1-2-2">For all <span class="process-math">\(a\in {\bf R}\text{,}\)</span> <span class="process-math">\(-a\in {\bf R}\text{,}\)</span> where <span class="process-math">\(a + (-a) = 0\text{.}\)</span> (For all <span class="process-math">\(a\in {\bf Z}\text{,}\)</span> <span class="process-math">\(-a\in {\bf Z}\text{,}\)</span> where <span class="process-math">\(a + (-a) = 0\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-4-1-3">
+<div class="para" id="algebra-4-1-3-1">The number <span class="process-math">\(1\)</span> is the <dfn class="terminology">multiplicative identity</dfn> of <span class="process-math">\({\bf R}\)</span> (and of <span class="process-math">\({\bf Z}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-4-1-3-2">For all <span class="process-math">\(a\in{\bf R}\text{,}\)</span> <span class="process-math">\(1\cdot a = a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebra-4-1-4">
+<div class="para" id="algebra-4-1-4-1">Every <dfn class="terminology">nonzero</dfn> element of <span class="process-math">\({\bf R}\)</span> has a multiplicative inverse in <span class="process-math">\({\bf R}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-4-1-4-2">For all <span class="process-math">\(a\in{\bf R}\text{,}\)</span> if <span class="process-math">\(a\neq 0\text{,}\)</span> then <span class="process-math">\(a^{-1}\in{\bf R}\)</span> and <span class="process-math">\(a\cdot a^{-1}= 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-4-1-4-3">
+<em class="emphasis">Remarks.</em> Recall from exponent rules that <span class="process-math">\(a^{-1}= 1/a\text{.}\)</span> I have my reasons for writing the property using the exponential notation.<div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="algebra-4-1-4-4">Notice that <span class="process-math">\({\bf Z}\)</span> is conspicuously absent here. Do you see why?<div class="autopermalink" data-description="Paragraph"><a href="#algebra-4-1-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebra-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#algebra-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Algebra"><a href="#algebra" title="Copy heading and permalink for Subsection: Algebra" aria-label="Copy heading and permalink for Subsection: Algebra">🔗</a></div></section><section class="subsection" id="inequalities"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Inequalities</span>
+</h4>
+<div class="para" id="inequalities-2">Everything in this section applies to <span class="process-math">\({\bf Z}\)</span> in exactly the same way it applies to <span class="process-math">\({\bf R}\text{,}\)</span> so I will skip over saying “and <span class="process-math">\({\bf Z}\)</span>” for everything here.<div class="autopermalink" data-description="Paragraph"><a href="#inequalities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="inequalities-3">
+<ul class="disc" id="inequalities-3-1">
+<li id="inequalities-3-1-1">
+<div class="para" id="inequalities-3-1-1-1">Suppose <span class="process-math">\(a,b,c\in{\bf R}\text{.}\)</span> If <span class="process-math">\(a &lt; b\text{,}\)</span> then <span class="process-math">\(a + c &lt; b + c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inequalities-3-1-1-2">You can replace <span class="process-math">\(&lt;\)</span> with <span class="process-math">\(\leq\text{,}\)</span> <span class="process-math">\(&gt;\text{,}\)</span> or <span class="process-math">\(\geq\text{.}\)</span> In fact, if you note that if <span class="process-math">\(a = b\text{,}\)</span> then <span class="process-math">\(a + c = b + c\text{,}\)</span> and also remember that <span class="process-math">\(b &gt; a\)</span> is synonymous with <span class="process-math">\(a &lt; b\text{,}\)</span> you can derive each of these three variations from the original statement.<div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inequalities-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inequalities-3-1-2">
+<div class="para" id="inequalities-3-1-2-1">Not really a new axiom, since you can replace <span class="process-math">\(c\)</span> with <span class="process-math">\(-c\)</span> in the axiom above, but it is also true that for all <span class="process-math">\(a,b,c\in{\bf R}\text{,}\)</span> if <span class="process-math">\(a&lt;b\text{,}\)</span> then <span class="process-math">\(a-c &lt; b-c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inequalities-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inequalities-3-1-3">
+<div class="para" id="inequalities-3-1-3-1">Suppose <span class="process-math">\(a,b,c\in{\bf R}\)</span> and <span class="process-math">\(a&lt;b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inequalities-3-1-3-2">If <span class="process-math">\(c &gt; 0\text{,}\)</span> then <span class="process-math">\(ac &lt; bc\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inequalities-3-1-3-3">If <span class="process-math">\(c &lt; 0\text{,}\)</span> then <span class="process-math">\(ac &gt; bc\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inequalities-3-1-3-4">You can replace <span class="process-math">\(&lt;\)</span> with <span class="process-math">\(\leq\text{,}\)</span> and it isn’t too difficult to reword this axiom for the assumption that <span class="process-math">\(a &gt; b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inequalities-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inequalities-3-1-4">
+<div class="para" id="inequalities-3-1-4-1">Suppose <span class="process-math">\(a,b,c\in{\bf R}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inequalities-3-1-4-2">If <span class="process-math">\(a&lt;b\)</span> and <span class="process-math">\(b&lt;c\text{,}\)</span> then <span class="process-math">\(a &lt; c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inequalities-3-1-4-3">This is sometimes called the <dfn class="terminology">transitive</dfn> property of <span class="process-math">\(&lt;\text{.}\)</span> The transitive property also applies to <span class="process-math">\(\leq\text{,}\)</span> <span class="process-math">\(&gt;\text{,}\)</span> and <span class="process-math">\(\geq\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inequalities-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inequalities-3-1-5">
+<div class="para" id="inequalities-3-1-5-1">
+<dfn class="terminology">Trichotomy</dfn>:<div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inequalities-3-1-5-2">For any <span class="process-math">\(a,b\in{\bf R}\text{,}\)</span> exactly one of the following three statements is true.<div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="inequalities-3-1-5-3">
+<div class="displaymath process-math" id="inequalities-3-1-5-3-1">
+\begin{equation*}
+a &lt; b
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="inequalities-3-1-5-3-2">
+\begin{equation*}
+a = b
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="inequalities-3-1-5-3-3">
+\begin{equation*}
+a &gt; b
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inequalities-3-1-5-4">
+<em class="emphasis">Remark.</em> An alternate form of trichotomy is the statement that for every <span class="process-math">\(a\in{\bf R}\text{,}\)</span> <span class="process-math">\(a\)</span> is exactly one of the following three things: positive, <span class="process-math">\(0\text{,}\)</span> or negative. This version can be combined with the first axiom in this section to derive the version comparing <span class="process-math">\(a\)</span> to <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3-1-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inequalities-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#inequalities-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Inequalities"><a href="#inequalities" title="Copy heading and permalink for Subsection: Inequalities" aria-label="Copy heading and permalink for Subsection: Inequalities">🔗</a></div></section><div class="autopermalink" data-description="Section: Axioms of {\bf R} that (mostly) also apply to {\bf Z}"><a href="#axioms-of-bf-r-that-mostly-also-apply-to-bf-z" title="Copy heading and permalink for Section: Axioms of {\bf R} that (mostly) also apply to {\bf Z}" aria-label="Copy heading and permalink for Section: Axioms of {\bf R} that (mostly) also apply to {\bf Z}">🔗</a></div></section><section class="section" id="axioms-particular-to-bf-z"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axioms particular to <span class="process-math">\({\bf Z}\)</span></span>
+</h3>
+<section class="subsection" id="mostly-just-the-one-axiom"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mostly just the one axiom</span>
+</h4>
+<div class="para logical" id="mostly-just-the-one-axiom-2">
+<ul class="disc" id="mostly-just-the-one-axiom-2-1"><li id="mostly-just-the-one-axiom-2-1-1">
+<div class="para" id="mostly-just-the-one-axiom-2-1-1-1">
+<dfn class="terminology">The Well Ordering Principle</dfn>:<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="mostly-just-the-one-axiom-2-1-1-2">Every non-empty subset of <span class="process-math">\({\bf Z}^+\)</span> has a smallest element.<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="mostly-just-the-one-axiom-2-1-1-3">
+<em class="emphasis">Remarks.</em> This is somewhat subtler than the other axioms in this list. To have a better understanding of its significance, you might want to think through why the corresponding statement is false for <span class="process-math">\({\bf R}^+\)</span> or for <span class="process-math">\({\bf Q}^+\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="mostly-just-the-one-axiom-2-1-1-4">There is a logically equivalent axiom that we’ll learn about in a few more chapters.<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-2-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#mostly-just-the-one-axiom-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="mostly-just-the-one-axiom-3">Here is a statement you may also assume in FOM, but it is actually a provable consequence of the Well Ordering Principle. The proof is an interesting exercise that you might want to attempt—<em class="emphasis">after</em> Chapter 6.<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="mostly-just-the-one-axiom-4">
+<ul class="disc" id="mostly-just-the-one-axiom-4-1">
+<li id="mostly-just-the-one-axiom-4-1-1">
+<div class="para" id="mostly-just-the-one-axiom-4-1-1-1">There are no integers between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="mostly-just-the-one-axiom-4-1-1-2">In other words, if <span class="process-math">\(n\in{\bf Z}\text{,}\)</span> then <span class="process-math">\(n\leq 0\)</span> or <span class="process-math">\(n\geq 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#mostly-just-the-one-axiom-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="mostly-just-the-one-axiom-4-1-2">
+<div class="para" id="mostly-just-the-one-axiom-4-1-2-1">A potentially useful corollary of the previous statement:<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="mostly-just-the-one-axiom-4-1-2-2">Suppose <span class="process-math">\(a,b\in{\bf Z}\text{.}\)</span> If <span class="process-math">\(a &gt; b\text{,}\)</span> then <span class="process-math">\(a\geq b+1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-4-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#mostly-just-the-one-axiom-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="mostly-just-the-one-axiom-5">Finally, you may use the Division Algorithm (stated in Chapter 1 and again in Chapter 4) without proof. In Section 1.9, the book outlines how the Division Algorithm can be proven from the Well Ordering Principle.<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="mostly-just-the-one-axiom-6">
+<ul class="disc" id="mostly-just-the-one-axiom-6-1"><li id="mostly-just-the-one-axiom-6-1-1">
+<div class="para" id="mostly-just-the-one-axiom-6-1-1-1">
+<dfn class="terminology">Division Algorithm</dfn>:<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="mostly-just-the-one-axiom-6-1-1-2">Suppose <span class="process-math">\(a\in{\bf Z}\)</span> and <span class="process-math">\(b\in{\bf Z}^+\text{.}\)</span> Then there exist unique integers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> such that <span class="process-math">\(a = bq + r\)</span> and <span class="process-math">\(0\leq r &lt; b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-6-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#mostly-just-the-one-axiom-6-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#mostly-just-the-one-axiom-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Mostly just the one axiom"><a href="#mostly-just-the-one-axiom" title="Copy heading and permalink for Subsection: Mostly just the one axiom" aria-label="Copy heading and permalink for Subsection: Mostly just the one axiom">🔗</a></div></section><div class="autopermalink" data-description="Section: Axioms particular to {\bf Z}"><a href="#axioms-particular-to-bf-z" title="Copy heading and permalink for Section: Axioms particular to {\bf Z}" aria-label="Copy heading and permalink for Section: Axioms particular to {\bf Z}">🔗</a></div></section><div class="autopermalink" data-description="Worksheet: Axioms of {\bf R} and {\bf Z}"><a href="#homework-4" title="Copy heading and permalink for Worksheet: Axioms of {\bf R} and {\bf Z}" aria-label="Copy heading and permalink for Worksheet: Axioms of {\bf R} and {\bf Z}">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="homework-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
