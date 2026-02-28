@@ -80,6 +80,24 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "Division Algorithm "
+},
+{
+  "id": "homework-5",
+  "level": "1",
+  "url": "homework-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 3",
+  "body": " Homework 3    Foundations of Mathematics      For each of the following statements, rewrite them either in the form if then or in the form if and only if without changing their meaning.    A function is differentiable only if it is continuous.    A function is rational if it is a polynomial.    For matrix to be invertible, it is necessary and sufficient that .    Whenever people agree with me I feel I must be wrong. (Oscar Wilde)      Recall that the converse of is . Here are some questions about statements and their converses. When you are asked to explain your answer, give the clearest explanation you can, but don’t worry about writing an official proof.    Consider the statement If , then . Is this statement true? Explain why or why not.    What is the converse of the previous statement? Is the converse true? Explain why or why not.    Consider the statement If , then there exists such that . Is this statement true? Explain why or why not.    What is the converse of the previous statement? Is the converse true? Explain why or why not.      Decide whether or not the following statements are logically equivalent. You may use a truth table, or you may use the rules and definitions from Chapter 2, whichever seems more appropriate for each part, but be sure to clearly justify your answer.     and      and      and     (more on next page)     Write each of the following as a sentence in English. Determine whether the statement is true or false, and explain your answer. As in the second question, you do not need to write up formal proofs for these explanations.   Remark. You may retain non-logic symbols like and , but try to avoid . For this exercise, there exists a real number  is preferable to “there exists .              For this part, let be the set of all prime numbers.         Prove that if  is an odd integer, then  is odd.   Remark. This time, please write a formal direct proof, as in Chapter 4.    Suppose . Prove that if and , then .   Remark. See previous remark.      An XKCD cartoon and two Sidney Harris cartoons. The XKCD cartoon is titled An Engineer Syllogism, and shows a person at a desk looking at a computer and thinking. The thought bubbles say, 1: I am good at understanding numbers. 2: The stock market is made of numbers. 3: Therefore, I -- Wow, where did all my money go? One Harris cartoon shows a dog thinking: All cats have four legs. I have four legs. Therefore I am a cat. The other cartoon shows a cat thinking: All cats have 4 legs and fur. I have four legs and fur... It's too hard to think anymore.   "
+},
+{
+  "id": "homework-5-3",
+  "level": "2",
+  "url": "homework-5.html#homework-5-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "converse "
 }
 ]
 
