@@ -1,0 +1,115 @@
+\documentclass[12pt,letterpaper]{report}
+%\usepackage{t1enc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\pagestyle{empty}
+\textwidth6.75in
+\oddsidemargin-.25in
+\textheight8.5in
+\topmargin-.25in
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\R{{\bf R}}
+\def\ps{{\cal P}}
+\def\ker{\mbox{ker}}
+\def\mod{\mbox{mod }}
+\def\implies{\Rightarrow}
+
+\begin{document}
+
+\begin{center}
+{\bf Foundations of Mathematics} \\
+Homework 3\\
+Due Friday, March 7, in class\\
+\end{center}
+
+\begin{enumerate}
+
+\item  For each of the following statements, rewrite them either in the form ``if $P$ then $Q$'' or in
+the form ``$P$ if and only if $Q$'' without changing their meaning.
+
+\begin{enumerate}
+\item  A function is differentiable only if it is continuous.
+
+\item  A function is rational if it is a polynomial.
+
+\item  For matrix $A$ to be invertible, it is necessary and sufficient that $\det(A) \neq 0$.
+
+\item  Whenever people agree with me I feel I must be wrong. (Oscar Wilde)
+\end{enumerate}
+
+\item  Recall that the \textbf{converse} of $P\implies Q$ is $Q\implies P$.  Here are some 
+questions about statements and their converses.  When you are asked to explain your answer,
+give the clearest explanation you can, but don't worry about writing an official proof.  
+
+\begin{enumerate}
+\item  Consider the statement ``If $a\in \R$, then $a\in \Q$.''  Is this statement true?  Explain why or why not.
+
+\item  What is the converse of the previous statement?  Is the converse true?  Explain why or why not.
+
+\item  Consider the statement ``If $x\neq 0$, then there exists $y\in\R$ such that $xy = 1$.''  
+Is this statement true?  Explain why or why not.
+
+\item  What is the converse of the previous statement?  Is the converse true?  Explain why or why not.
+\end{enumerate}
+
+\item  Decide whether or not the following statements are logically equivalent.  
+You may use a truth table, or you may
+use the rules and definitions from Chapter 2, whichever seems more appropriate for each part,
+but be sure to clearly justify your answer.
+
+\begin{enumerate}
+\item  $(P\lor Q)\land R$ and $P\lor (Q\land R)$
+
+\item  $P\implies Q$ and $(\sim P)\lor Q$
+
+\item $\sim P$ and $P\implies (Q\land(\sim Q))$
+\end{enumerate}
+
+\vfill
+
+\hfill (more on next page)\ 
+
+\newpage
+
+
+
+\item  Write each of the following as a sentence in English.   Determine whether the statement is true or false, and explain your answer.  As in the second question, you do not
+need to write up formal proofs for these explanations.  
+
+\textit{Remark.} You may retain non-logic symbols like
+$\geq$ and $=$, but try to avoid $\in$.  For this exercise, ``there exists a real number~$x$'' is
+preferable to ``there exists $x\in\R$. 
+
+\begin{enumerate}
+\item  $\forall x\in\R, \exists n\in\Z^+, x^n\geq 0$
+
+\item  $\exists n\in\Z^+, \forall X\in\ps(\Z), |X| < n$
+
+\item  For this part, let $P$ be the set of all prime numbers.
+
+$\forall m\in\Z^+, \exists p\in P, p>m$
+\end{enumerate}
+
+\item  Prove that if~$x$ is an odd integer, then~$x^3$ is odd.
+
+\textit{Remark.}  This time, please write a formal direct proof, as in Chapter~4.
+
+\item  Suppose $a,b,c\in\Z$.  Prove that if $a|b$ and $a|c$, then $a|(b+c)$.
+
+\textit{Remark.}  See previous remark.
+
+
+\end{enumerate}
+
+\bigskip
+
+\begin{center}
+\includegraphics[scale=.66]{logiccartoons.eps}
+\end{center}
+
+\end{document}
