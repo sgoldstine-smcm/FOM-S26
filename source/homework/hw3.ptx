@@ -63,6 +63,9 @@
 		
 				<li>
 					<p>
+						For the remaining parts, please assume that <m>x\in{\bf R}</m>. 
+					</p>
+					<p>
 						Consider the statement <q>If <m>x\neq 0</m>, then there exists <m>y\in{\bf R}</m> such that <m>xy = 1</m>.</q> Is this statement true? Explain why or why not.
 					</p>
 				</li>
