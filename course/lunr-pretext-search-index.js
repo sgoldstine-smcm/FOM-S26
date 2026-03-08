@@ -98,6 +98,51 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "converse "
+},
+{
+  "id": "homework-6",
+  "level": "1",
+  "url": "homework-6.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Proof Practice",
+  "body": " Proof Practice    Foundations of Mathematics    First, let’s look at the formal proof that when , is even if and only if is not odd. First, a reminder of the Division Algorithm (misnamed, because it’s a theorem—or if you’re in a rush, an axiom—and not an algorithm):   Division Algorithm . Suppose and . Then there exist unique integers  and  such that and .   Proposition . Suppose . Then  is even or  is odd, and is not both even and odd.   Proof. Let be an integer. By the Division Algorithm, there exist unique integers  and  such that and . Note that this means that either or .   Case 1: r = 0.   In this case, and  is an integer, so by definition  is even. Moreover, if were odd, then there would exist an integer  such that , which would mean that is not unique. Thus, is not odd.   Case 2: r = 1.   In this case, and  is an integer, so by definition  is odd. Moreover, if were even, then there would exist an integer  such that , which would mean that is not unique. Thus, is not even.  In both possible cases, is even or odd but not both.   So, just to reaffirm: you may freely use the fact that when is an integer, if  is not even then is odd, and if is not odd than is even.  Now, some proofs for you to try. Some of them will use the following definition (implicit in our description of  in Chapter 1):   Definition. Suppose . Then is rational when there exist such that . Otherwise, is irrational .    Suppose . Prove that if and , then .    Suppose that .  Prove that if and are rational, then is also rational.    Suppose that and that  is rational. (In other words, .)  Prove that if is irrational, then is irrational.    Suppose . Prove that if is not divisible by  , then is odd.    Suppose that and are integers. Prove that if is even, then is even.    "
+},
+{
+  "id": "homework-6-4",
+  "level": "2",
+  "url": "homework-6.html#homework-6-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Division Algorithm "
+},
+{
+  "id": "homework-6-5",
+  "level": "2",
+  "url": "homework-6.html#homework-6-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Proposition "
+},
+{
+  "id": "homework-6-6",
+  "level": "2",
+  "url": "homework-6.html#homework-6-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Proof. "
+},
+{
+  "id": "homework-6-14",
+  "level": "2",
+  "url": "homework-6.html#homework-6-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Definition. rational irrational "
 }
 ]
 
