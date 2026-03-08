@@ -67,6 +67,7 @@
       <xi:include href="./homework/quiz1revsol.ptx"/>
       <xi:include href="./homework/axioms.ptx"/>
       <xi:include href="./homework/hw3.ptx"/>
+      <xi:include href="./homework/proofpractice.ptx"/>
     </chapter>
 
     <!-- Include additional chapters for other categories -->

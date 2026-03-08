@@ -1,0 +1,105 @@
+\documentclass[12pt,letterpaper]{report}
+\usepackage{graphicx}
+%\usepackage{t1enc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+%\textwidth6.5in
+%\oddsidemargin-.15in
+%\textheight9in
+%\topmargin-.65in
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\N{{\bf N}}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\R{{\bf R}}
+\def\ps{{\cal P}}
+\def\mod{\mbox{mod }}
+\def\emptyset{\varnothing}
+
+\begin{document}
+
+\begin{center}
+{\bf Foundations of Mathematics \\
+Proof Practice}\\
+\end{center}
+
+First, let's look at the formal proof that when $x\in \Z$, 
+$x$ is even if and only if $x$ is not odd.  First, a reminder of the Division Algorithm (misnamed,
+because it's a theorem---or if you're in a rush, an axiom---and not an algorithm):
+
+\medskip
+
+\noindent\textbf{Division Algorithm}.
+Suppose $a\in\Z$ and $b\in\Z^+$.  Then there exist unique integers~$q$ and~$r$ such that
+$a = bq + r$ and $0\leq r < b$.
+
+\medskip
+
+\noindent\textbf{Proposition}.  Suppose $x\in\Z$.  Then~$x$ is even or~$x$ is odd, and $x$ is not both even and odd.
+
+\smallskip
+
+\noindent\textbf{Proof.}  Let $x$ be an integer.  By the Division Algorithm, there exist unique integers~$q$ and~$r$ 
+such that $x = 2q + r$ and $0\leq r < 2$.  Note that this means that either $r = 0$ or $r = 1$.
+
+\smallskip
+
+\noindent\textit{Case 1: r = 0.}
+
+In this case, $x = 2q + 0 = 2q$ and~$q$ is an integer, so by definition~$x$ is even.  Moreover, if $x$ were odd,
+then there would exist an integer~$k$ such that $x = 2k + 1$, which would mean that $r = 0$ is not unique.  
+Thus, $x$ is not odd.
+
+\smallskip
+
+\noindent\textit{Case 2: r = 1.}
+
+In this case, $x = 2q + 1$ and~$q$ is an integer, so by definition~$x$ is odd.  Moreover, if $x$ were even,
+then there would exist an integer~$k$ such that $x = 2k = 2k + 0$, which would mean that $r = 1$ is not unique.  
+Thus, $x$ is not even.
+
+In both possible cases, $x$ is even or odd but not both.  \hfill$\square$
+
+\bigskip
+
+So, just to reaffirm: you may freely use the fact that when $x$ is an integer, if~$x$ is not even then $x$ is odd, 
+and if $x$ is not odd than $x$ is even.
+
+\newpage
+
+Now, some proofs for you to try.  Some of them will use the following definition (implicit in our description of~$\Q$ 
+in Chapter~1):
+
+\smallskip
+
+\noindent\textbf{Definition.}  Suppose $x\in\R$.  Then $x$ is \textbf{rational} when there exist $a,b\in\Z$
+such that $x = a/b$.  Otherwise, $x$ is \textbf{irrational}.
+
+\medskip
+
+\begin{enumerate}
+
+\item  Suppose $a,b,c\in\Z$.  Prove that if $c|a$ and $c|b$, then $c^2|(a^2 - ab + b^2)$.
+
+\item  Suppose that $x,y\in\R$.  
+
+Prove that if $x$ and $y$ are rational, then $x + y$ is also rational.
+
+\item  Suppose that $x,y\in\R$ and that~$x$ is rational.  (In other words, $x\in\Q$.)
+
+Prove that if $xy$ is irrational, then $y$ is irrational.
+
+\item  Suppose $n\in\Z$.
+Prove that if $n^2$ is not divisible by~$4$, then $n$ is odd.
+
+\item  Suppose that $k$ and $m$ are integers.  Prove that if $k + m$ is even, then $k - m$ is even.
+
+\end{enumerate}
+
+
+\end{document}
