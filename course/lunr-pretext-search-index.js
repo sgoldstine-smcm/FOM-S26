@@ -143,6 +143,33 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "Definition. rational irrational "
+},
+{
+  "id": "homework-7",
+  "level": "1",
+  "url": "homework-7.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Proof Practice Sample Solutions",
+  "body": " Proof Practice Sample Solutions    Foundations of Mathematics      Suppose . Prove that if and , then .   Proof. Suppose that and . By definition of divides, there exist such that and . From these equations, we can see that  . Let , and note than since  and  are integers and  is closed under addition, subtraction, and multiplication, is also an integer. Because we conclude that .     Suppose that .  Prove that if and are rational, then is also rational.   Proof. Suppose that and are rational. This means that there exist integers  , , , and  such that Note that this also means that and . Then, Since  is closed under multiplication and addition, and are integers. Therefore, is rational.     Suppose that and that  is rational. (In other words, .)  Prove that if is irrational, then is irrational.   Proof. Suppose that and that  is rational.  Now, suppose that  is also rational. This means both  and  are both rational, or in other words, there exist integers  , , , and  such that It follows that Since the integers are closed under multiplication, and are integers, and thus is rational.  Therefore, we conclude that if is irrational, then  is irrational.     Suppose . Prove that if is not divisible by  , then is odd.   Proof. Suppose that is even. This means that for some integer  , . As a consequence, Note that because  is an integer, is also an integer, so we can see that is a divisor of  .  Therefore, if is not a divisor of , then must be odd.     Suppose that and are integers. Prove that if is even, then is even.  There are several feasible approaches to this proof. Here are two of them.   First Proof. Suppose and is even.   Case 1:  and are both even.  Then there exist such that and . Thus , and since is a difference of integers and hence an integer, is even.   Case 2:  and are both odd.  Then there exist such that and . Thus , and since is an integer, is even.   Remark. THE PROOF IS NOT COMPLETE YET. A major hint that the proof is not complete yet is that we haven’t explicitly used the fact that is even. The remaining cases will fix that.   Case 3:  is even and is odd. Then there exist such that and . But then , which is odd because is an integer. Thus this case doesn’t happen when is even.   Case 4:  is odd and is even. Then there exist such that and . But then , which is odd. Thus this case also doesn’t happen when is even.  In all possible cases where is even, is even.      Second Proof. Suppose and is even.  By definition of even, there exists an integer  such that Then, , and if we subtract  from both sides again, we have Since the difference of two integers is an integer, . Therefore is even.   "
+},
+{
+  "id": "homework-7-3",
+  "level": "2",
+  "url": "homework-7.html#homework-7-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Proof. Proof. Proof. Proof. First Proof. "
+},
+{
+  "id": "homework-7-4",
+  "level": "2",
+  "url": "homework-7.html#homework-7-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Second Proof. "
 }
 ]
 
