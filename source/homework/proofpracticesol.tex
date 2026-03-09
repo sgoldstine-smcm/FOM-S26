@@ -1,0 +1,141 @@
+\documentclass[12pt,letterpaper]{report}
+\usepackage{graphicx}
+%\usepackage{t1enc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+%\textwidth6.5in
+%\oddsidemargin-.15in
+%\textheight9in
+%\topmargin-.65in
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\N{{\bf N}}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\R{{\bf R}}
+\def\ps{{\cal P}}
+\def\mod{\mbox{mod }}
+\def\emptyset{\varnothing}
+
+\begin{document}
+
+\begin{center}
+{\bf Foundations of Mathematics \\
+Proof Practice Sample Solutions}\\
+\end{center}
+
+
+\begin{enumerate}
+
+\item  Suppose $a,b,c\in\Z$.  Prove that if $c|a$ and $c|b$, then $c^2|(a^2 - ab + b^2)$.
+
+\smallskip
+\noindent\textbf{Proof.}
+Suppose that $c|a$ and $c|b$.  By definition of divides, there exist $k,m\in\Z$ such that 
+$a = ck$ and $b = cm$.  From these equations, we can see that
+\begin{eqnarray*}
+a^2 - ab + b^2 &=& (ck)^2 - (ck)(cm) + (cm)^2) \\
+&=& c^2k^2 - c^2km + c^2m^2\\ 
+&=& c^2(k^2 - km + m^2)\end{eqnarray*}
+Let $n = k^2 - km + m^2$, and note than since~$k$ and~$m$ are integers and~$\Z$ is closed 
+under addition, subtraction, and multiplication, $n$ is also an integer.  Because
+$$a^2 - ab + b^2 = c^2 n,$$
+we conclude that $c^2|(a^2 - ab + b^2)$.\hfill $\square$
+
+\item  Suppose that $x,y\in\R$.  
+
+Prove that if $x$ and $y$ are rational, then $x + y$ is also rational.
+
+\smallskip
+\noindent\textbf{Proof.}
+Suppose that $x$ and $y$ are rational.  This means that there exist integers~$a$, $b$, $c$, and~$d$
+such that $$x = \frac{a}{b} \mbox{ and }y = \frac{c}{d}.$$  Note that this also means that $b\neq 0$ and $d\neq 0$.
+Then,
+$$x + y =  \frac{a}{b} +  \frac{c}{d} = \frac{ad}{bd} +  \frac{bc}{bd} = \frac{ad + bc}{bd}.$$
+Since~$\Z$ is closed under multiplication and addition, $ad + bc$ and $bd$ are integers.
+Therefore, $x + y$ is rational.\hfill $\square$
+
+\newpage
+
+\item  Suppose that $x,y\in\R$ and that~$x$ is rational.  (In other words, $x\in\Q$.)
+
+Prove that if $xy$ is irrational, then $y$ is irrational.
+
+\smallskip
+\noindent\textbf{Proof.}
+Suppose that $x,y\in\R$ and that~$x$ is rational.
+
+Now, suppose that~$y$ is also rational.  This means both~$x$ and~$y$ are both rational, or in other words,
+there exist integers~$a$, $b$, $c$, and~$d$
+such that $$x = \frac{a}{b} \mbox{ and }y = \frac{c}{d}.$$ 
+It follows that $$xy = \frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}.$$
+Since the integers are closed under multiplication, $ac$ and $bd$ are integers, and thus $xy$ is rational.
+
+Therefore, we conclude that if $xy$ is irrational, then~$y$ is irrational.\hfill $\square$
+
+\item  Suppose $n\in\Z$.
+Prove that if $n^2$ is not divisible by~$4$, then $n$ is odd.
+
+\smallskip
+\noindent\textbf{Proof.}
+Suppose that $n$ is even.  This means that for some integer~$k$, $n = 2k$.
+As a consequence, $$n^2 = (2k)^2 = 4k^2.$$
+Note that because~$k$ is an integer, $k^2$ is also an integer, so we can see that $4$ is a divisor of~$n^2$.
+
+Therefore, if $4$ is not a divisor of $n^2$, then $n$ must be odd. \hfill $\square$
+
+\newpage
+
+\item  Suppose that $k$ and $m$ are integers.  Prove that if $k + m$ is even, then $k - m$ is even.
+
+There are several feasible approaches to this proof.  Here are two of them.
+
+\smallskip
+\noindent\textbf{First Proof.} 
+Suppose $k,m\in\Z$ and $k + m$ is even.
+
+\noindent\textit{Case 1:} $k$ and $m$ are both even.
+
+Then there exist $a,b\in\Z$ such that $k = 2a$ and $m = 2b$.  Thus $k - m = 2a - 2b = 2(a - b)$,
+and since $a-b$ is a difference of integers and hence an integer, $k - m$ is even.
+
+\noindent\textit{Case 2:} $k$ and $m$ are both odd.
+
+Then there exist $a,b\in\Z$ such that $k = 2a + 1$ and $m = 2b + 1$.  Thus $k - m = (2a + 1) - (2b + 1) = 2(a - b)$,
+and since $a-b$ is an integer, $k - m$ is even.
+
+\bigskip
+
+\textit{Remark.}  THE PROOF IS NOT COMPLETE YET.  A major hint that the proof is not complete yet 
+is that we haven't explicitly used the fact that $k + m$ is even.  The remaining cases will fix that.
+
+\bigskip
+
+\noindent\textit{Case 3:} $k$ is even and $m$ is odd.
+Then there exist $a,b\in\Z$ such that $k = 2a$ and $m = 2b + 1$.  But then $k + m = 2a + 2b + 1 = 
+2(a + b) + 1$, which is odd because $a+b$ is an integer.  Thus this case doesn't happen when $k + m$ is even.
+
+\noindent\textit{Case 4:} $k$ is odd and $m$ is even.
+Then there exist $a,b\in\Z$ such that $k = 2a + 1$ and $m = 2b$.  But then $k + m = 2a + 1 + 2b = 
+2(a + b) + 1$, which is odd.  Thus this case also doesn't happen when $k + m$ is even.
+
+In all possible cases where $k + m$ is even, $k-m$ is even.  \hfill $\square$
+
+\end{enumerate}
+
+\smallskip
+\noindent\textbf{Second Proof.} 
+Suppose $k,m\in\Z$ and $k + m$ is even.
+
+By definition of even, there exists an integer~$c$ such that $k + m = 2c.$
+Then, $k = 2c - m$, and if we subtract~$m$ from both sides again, we have
+$$k - m = 2c - 2m = 2(c - m).$$
+Since the difference of two integers is an integer, $c-m\in\Z$.  Therefore $k - m$ is even.\hfill $\square$
+
+
+
+\end{document}
