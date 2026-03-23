@@ -1,0 +1,66 @@
+\documentclass[12pt,letterpaper]{report}
+%\usepackage{t1enc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\pagestyle{empty}
+\textwidth6.15in
+\oddsidemargin-.15in
+\textheight9.5in
+\topmargin-.75in
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\R{{\bf R}}
+\def\P{{\cal P}}
+\def\PS{\P(S)}
+\def\iff{\Longleftrightarrow}
+\def\implies{\Longrightarrow}
+\def\nd{\mbox{ and }}
+\def\o{\mbox{ or }}
+\def\nt{\mbox{not }}
+\def\gcd{\mbox{gcd}}
+
+\begin{document}
+
+\begin{center}
+Foundations of Mathematics \\
+Evaluating and Revising Proofs\\
+\end{center}
+
+Here are some attempted proofs, adapted by a colleague from past FOM student answers, of the following statement:
+\begin{quote}
+Suppose~$n$ is a positive integer.  If~$n^2$ is a multiple of~$3$, then~$n$ is a multiple of~$3$.
+\end{quote} 
+
+For each of the following proofs:
+\begin{itemize}
+\item  Read through the proof line by line.  Does each line follow from a known mathematical fact or from previous lines?
+\item  Decide whether it is a valid proof.  Why do you think it is valid or invalid?
+\item  Grade the proof on a scale from~$1$ (does not verify the statement at all) to~$5$ (a completely clear, convincing, and logically sound argument).
+\item  What advice would you give the proof writer on how to change the proof?
+\end{itemize}
+
+\bigskip
+
+\begin{enumerate}
+
+\item  Let $n$ be an integer such that $n^2=3x$ where $x$ is an integer. Then $3 | n^2$. Since $n^2 = 3x$,  $nn = 3x$. Thus $3 | n$. Therefore if $n^2$ is a multiple of 3, then $n$ is a multiple of 3.
+
+\item  Assume that $n^2$ is an odd positive integer that is divisible by 3. That is $n^2 = (3n+1)^2 = 9n^2 + 6n +1 = 3n(n+2)+1$. Therefore, $n^2$ is divisible by 3. Assume that $n^2$ is even and a multiple of 3. That is, $n^2 = (3n)^2 = 9n^2 = 3n(3n)$. Therefore, $n^2$ is a multiple of 3. If we factor $n^2 = 9n^2$, we get $3n(3n)$, which means that $n$ is a multiple of 3.
+
+\item  Let $n$ be a positive integer such that $n^2$ is a multiple of 3. Then $n=3m$ where $m \in \Z$. So $n^2 = (3m)^2 = 9 m^2 = 3 (3m^2).$ This breaks down into $3m$ times $3m$ which shows that $m$ is a multiple of 3. 
+
+\item  Suppose $n$ is not a multiple of 3. We will let $3k$ be a positive integer that is a multiple of 3, so that $3k+1$ and $3k+2$ are integers that are not multiples of 3. Now $n^2 = (3k+1)^2 = 9k^2 + 6k +1 = 3(3k^2+2k) + 1$. Since $ 3(3k^2+2k)$ is a multiple of 3, $ 3(3k^2+2k)+1$ is not. For the other case, $n^2 = (3k+2)^2 = 9k^2 + 12k +4 = 3(3k^2+4k+1) + 1$, which is not a multiple of 3. %Because $n^2$ is not a multiple of 3, we have a contradiction.
+
+\bigskip
+\bigskip
+\bigskip
+
+%\item Now that you've read and examined all of these proofs, work with your classmates to write a proof of your own, keeping the principles of good proof writing in mind.
+
+\end{enumerate}
+
+\end{document}
