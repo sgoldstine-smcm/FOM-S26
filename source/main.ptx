@@ -70,7 +70,8 @@
       <xi:include href="./homework/proofpractice.ptx"/>
       <xi:include href="./homework/proofpracticesol.ptx"/>
       <xi:include href="./homework/proofeval25.ptx"/>
-    </chapter>
+      <xi:include href="./homework/hw4.ptx"/>
+   </chapter>
 
     <!-- Include additional chapters for other categories -->
 
