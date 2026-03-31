@@ -179,6 +179,15 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Evaluating and Revising Proofs",
   "body": " Evaluating and Revising Proofs    Foundations of Mathematics    Here are some attempted proofs, adapted by a colleague from past FOM student answers, of the following statement:   Suppose  is a positive integer. If  is a multiple of  , then  is a multiple of  .   For each of the following proofs:    Read through the proof line by line. Does each line follow from a known mathematical fact or from previous lines?    Decide whether it is a valid proof. Why do you think it is valid or invalid?    Grade the proof on a scale from  (does not verify the statement at all) to  (a completely clear, convincing, and logically sound argument).    What advice would you give the proof writer on how to change the proof?      Let be an integer such that where is an integer. Then . Since , . Thus . Therefore if is a multiple of 3, then is a multiple of 3.    Assume that is an odd positive integer that is divisible by 3. That is . Therefore, is divisible by 3. Assume that is even and a multiple of 3. That is, . Therefore, is a multiple of 3. If we factor , we get , which means that is a multiple of 3.    Let be a positive integer such that is a multiple of 3. Then where . So This breaks down into times which shows that is a multiple of 3.    Suppose is not a multiple of 3. We will let be a positive integer that is a multiple of 3, so that and are integers that are not multiples of 3. Now . Since is a multiple of 3, is not. For the other case, , which is not a multiple of 3.    "
+},
+{
+  "id": "homework-9",
+  "level": "1",
+  "url": "homework-9.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 4",
+  "body": " Homework 4    Foundations of Mathematics      Suppose . Prove that if , then .    Suppose that . Prove that .    Prove that for any , .    Suppose  and  are real numbers.    Prove that if , then , , or .    Prove the converse, that if , , or , then .     Remark. Together, the two parts of this question prove that if and only if , , or .   Hint. There is a similar odd exercise in Chapter 7.      A Sidney Harris cartoon. Two professors in rumpled suits are fist fighting in front of a blackboard covered with arcane math symbols. One of the combatants is yelling \"You want proof? I'll give you proof!\"   "
 }
 ]
 
