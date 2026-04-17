@@ -188,6 +188,24 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Homework 4",
   "body": " Homework 4    Foundations of Mathematics      Suppose . Prove that if , then .    Suppose that . Prove that .    Prove that for any , .    Suppose  and  are real numbers.    Prove that if , then , , or .    Prove the converse, that if , , or , then .     Remark. Together, the two parts of this question prove that if and only if , , or .   Hint. There is a similar odd exercise in Chapter 7.      A Sidney Harris cartoon. Two professors in rumpled suits are fist fighting in front of a blackboard covered with arcane math symbols. One of the combatants is yelling \"You want proof? I'll give you proof!\"   "
+},
+{
+  "id": "homework-10",
+  "level": "1",
+  "url": "homework-10.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Evaluating and Revising Induction Proofs",
+  "body": " Evaluating and Revising Induction Proofs    Foundations of Mathematics    Here are some attempted proofs by induction of statements that may or may not be true. Please do the following for each of them.    Read through the proof line by line. Does it follow the structure of an induction proof? Is the base case adequate? Does each line in the induction hypothesis follow from a known mathematical fact or from previous lines?    Decide whether it is a valid proof. Why do you think it is valid or invalid?    Determine whether the underlying statement is true. If not, is there a simple modification that will turn it into a true statement?    What advice would you give the proof writer on how to change the statement and\/or proof? (You may have advice even if the statement is true and the proof is valid.)     Hint. No algebra errors are introduced in the equations below.     Proposition. For each ,    Proof. Suppose that . Then  Therefore, by mathematical induction, the proposition is proven.      Proposition. For each ,    Proof. Base case ( ): In this case, the left hand side of the equation is  , and the right hand side is , so the equation holds.  Induction Hypothesis ( ): Suppose that .  Now, since  was arbitrary, we can deduce that   Therefore, by the principle of induction, for each , .      Proposition. For each ,    Proof. First of all,   Now, suppose that        By induction, the proposition is proven.     "
+},
+{
+  "id": "homework-10-6",
+  "level": "2",
+  "url": "homework-10.html#homework-10-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Proposition. Proof. Proposition. Proof. Proposition. Proof. "
 }
 ]
 
