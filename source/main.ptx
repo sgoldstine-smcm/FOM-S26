@@ -71,6 +71,7 @@
       <xi:include href="./homework/proofpracticesol.ptx"/>
       <xi:include href="./homework/proofeval25.ptx"/>
       <xi:include href="./homework/hw4.ptx"/>
+      <xi:include href="./homework/inductionproofeval.ptx"/>
    </chapter>
 
     <!-- Include additional chapters for other categories -->

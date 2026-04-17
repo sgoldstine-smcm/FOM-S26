@@ -1,0 +1,116 @@
+\documentclass[12pt,letterpaper]{report}
+%\usepackage{t1enc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\pagestyle{empty}
+\textwidth6.15in
+\oddsidemargin-.15in
+\textheight9.5in
+\topmargin-.75in
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\R{{\bf R}}
+\def\P{{\cal P}}
+\def\PS{\P(S)}
+\def\iff{\Longleftrightarrow}
+\def\implies{\Longrightarrow}
+\def\nd{\mbox{ and }}
+\def\o{\mbox{ or }}
+\def\nt{\mbox{not }}
+\def\gcd{\mbox{gcd}}
+
+\begin{document}
+
+\begin{center}
+Foundations of Mathematics \\
+Evaluating and Revising Induction Proofs\\
+\end{center}
+
+Here are some attempted proofs by induction of statements that may or may not be true.
+Please do the following for each of them.
+\begin{itemize}
+\item  Read through the proof line by line.  Does it follow the structure of an induction proof?  Is the base case adequate?  Does each line in the induction hypothesis follow from a known mathematical fact or from previous lines?
+\item  Decide whether it is a valid proof.  Why do you think it is valid or invalid?
+\item  Determine whether the underlying statement is true.  If not, is there a simple modification that will turn it into a true statement?
+\item  What advice would you give the proof writer on how to change the statement and/or proof?
+(You may have advice even if the statement is true and the proof is valid.)
+\end{itemize}
+
+{\it Hint.}  No algebra errors are introduced in equations (1) and (2) below.
+
+\bigskip
+
+\begin{enumerate}
+
+\item  {\bf Proposition.}  For each $n\in\Z^+$, 
+$$1 + 5 + 5^2 +\cdots + 5^{n - 1} = \frac{5^n + 1}{4}.$$
+
+{\bf Proof.}  Suppose that $1 + 5 + 5^2 +\cdots + 5^{k - 1} = (5^k + 1)/4$.
+Then
+\begin{equation}
+\begin{array}{rcl}
+1 + 5 + 5^2 +\cdots + 5^{k - 1} + 5^k & = & \ds \frac{5^k + 1}{4} + 5^k\\[12pt]
+& = & \ds \frac{5^k + 1}{4} + \frac{4\cdot 5^k}4\\[12pt]
+& = & \ds \frac{5^k + 4\cdot 5^k + 1}4\\[12pt]
+& = & \ds \frac{5\cdot 5^k + 1}4\\[12pt]
+& = & \ds \frac{5^{k + 1} + 1}4
+\end{array}
+\end{equation}
+Therefore, by mathematical induction, the proposition is proven.\hfill$\square$
+
+\newpage
+
+\item  {\bf Proposition.}  For each $n\in\Z^+$, 
+$$1 + 2 + \cdots + n = \frac{n(n + 1)}2.$$
+
+{\bf Proof.}  Base case ($n = 1$):  In this case, the left hand side of the equation is~$1$,
+and the right hand side is $1(1 + 1)/2 = 2/2 = 1$, so the equation holds.
+
+\smallskip
+
+Induction Hypothesis ($n = k$):  Suppose that 
+$1 + 2 + \cdots + k = k(k + 1)/2$.
+
+Now, since~$k$ was arbitrary, we can deduce that
+$$1 + 2 + \cdots + (k + 1) = (k + 1)((k + 1) + 1)/2 = (k + 1)(k + 2)/2.$$
+
+\smallskip
+
+Therefore, by the principle of induction, for each $n\in\Z^+$, 
+$1 + 2 + \cdots + n = n(n + 1)/2$.\hfill$\square$
+
+%\newpage
+\bigskip
+
+\item  {\bf Proposition.}  For each $n\in\Z^+$,
+$$\sum_{i = 1}^n F_{2i} = F_2 + F_4 + F_6 + \ldots + F_{2n} = F_{2n+1} - 1.$$
+
+{\bf Proof.}  First of all,
+$$\sum_{i = 1}^1 F_{2i} = F_2 = 1 = 2-1 = F_{3} - 1.$$
+
+Now, suppose that $$\sum_{i = 1}^t F_{2i} = F_{2t+1} - 1.$$
+
+\begin{equation}
+\begin{array}{rcl}
+\ds\sum_{i = 1}^{t+1} F_{2i}
+& = & F_2 + \cdots + F_{2t} + F_{2(t+1)}\\
+& = & \ds\sum_{i = 1}^t F_{2i} + F_{2t + 2}\\[12pt]
+& = & F_{2t + 1} - 1 + F_{2t+2}\\[6pt]
+& = & F_{2t + 1} + F_{2t+2} - 1 \\[6pt]
+& = & F_{2t + 3}  - 1 \\[6pt]
+& = & F_{2(t + 1) + 1} -1
+\end{array}
+\end{equation}
+
+
+By induction, the proposition is proven.\hfill$\square$
+
+\end{enumerate}
+
+
+\end{document}
