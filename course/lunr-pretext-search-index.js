@@ -206,6 +206,15 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "Proposition. Proof. Proposition. Proof. Proposition. Proof. "
+},
+{
+  "id": "homework-11",
+  "level": "1",
+  "url": "homework-11.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 5",
+  "body": " Homework 5    Foundations of Mathematics      Prove that for every ,     Recall that the Fibonacci numbers are , , and for all .  Prove that for every ,     Consider the relation  on  given by   Is reflexive? Is symmetric? Is transitive? Prove your answers.    Consider the relation  on  defined by   Prove that is an equivalence relation.      A cartoon from Math With Bad Drawings. The cartoon consists of a proof with a stick-figure face becoming more surprised as the proof unfolds. The text reads: Theorem: All whole numbers are interesting. Suppose there is an uninteresting number greater than zero. Then there must be a smallest uninteresting number. But that would be a very interesting property!   mathwithbaddrawings.com  "
 }
 ]
 
