@@ -1,0 +1,69 @@
+\documentclass[12pt,letterpaper]{report}
+%\usepackage{t1enc}
+%\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\pagestyle{empty}
+\textwidth6.75in
+\oddsidemargin-.25in
+\textheight8.5in
+\topmargin-.25in
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\R{{\bf R}}
+\def\ps{{\cal P}}
+\def\ker{\mbox{ker}}
+\def\mod{\mbox{mod }}
+\def\implies{\Rightarrow}
+
+
+\begin{document}
+
+\begin{center}
+{\bf Foundations of Mathematics} \\
+Homework 5\\
+Due Friday, April 24, in class
+\end{center}
+
+
+\begin{enumerate}
+
+\item  Prove that for every $n\in\Z^+$,
+$$\sum_{i = 1}^n i(i+1) = 1\cdot 2 + 2\cdot 3 + \cdots + n(n+1)
+= \frac{n(n+1)(n+2)}3.$$
+
+\item  Recall that the Fibonacci numbers are $F_1 = 1$, $F_2 = 1$, and
+$$F_{n + 1} = F_n + F_{n-1}$$
+for all $n\geq 2$.
+
+Prove that for every $n\in\Z^+$, $$ \sum_{j = 1}^n (F_j)^2 = F_n\cdot F_{n+1}.$$
+
+\item  Consider the relation~$\sim$ on~$\R$ given by 
+$$x\sim y\Longleftrightarrow |x - y| < 1.$$
+
+Is $\sim$ reflexive? Is $\sim$  symmetric?  Is $\sim$ transitive?  Prove your answers.
+
+%\textit{Hint.}  Each of these properties is defined with a universal quantifier.  This means that if you
+%are trying to show that~$\sim$ does \textit{not} have one of these properties, a single counterexample will suffice.  
+%Do you see why?
+
+\item  Consider the relation~$\approx$ on~$\Z^+\times\Z^+$ defined by 
+$$(a,b)\approx(c,d)\Longleftrightarrow ad = bc.$$
+
+Prove that $\approx$ is an equivalence relation.
+
+\end{enumerate}
+
+\bigskip
+
+\begin{center}
+\includegraphics[scale=.9]{boringnumbers.eps}
+
+\end{center}
+
+\bigskip
+
+\end{document}
